@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Hero Section</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Travel</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Destination</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Package</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+      </ul>
+
+      <input type="text" class="search-box me-3" placeholder="Search Destination">
+
+      <div class="social-icons">
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="hero-content">
+      <span>Exploring</span>
+      <h1>Pack Your Bags, Let’s Go<br>Somewhere Amazing</h1>
+      <p>
+        Whether you're craving adventure, relaxation, or cultural exploration,
+        your next unforgettable journey starts here.
+      </p>
+
+      <div class="subscribe-wrapper">
+       <input type="email" placeholder="Enter your email here..." />
+       <button type="button">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Floating Icons -->
+  <div class="right-icons">
+    <i class="bi bi-x-lg"></i>
+    <i class="bi bi-volume-up"></i>
+    <i class="bi bi-three-dots-vertical"></i>
+  </div>
+
+  <!-- Explore Button -->
+  <div class="explore-btn">
+    <button class="btn btn-outline-light">Explore More ↓</button>
+  </div>
+</section>
+<section class="section-wrapper">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT -->
+      <div class="col-lg-6 left-content">
+        <span class="tag">Our Service</span>
+        <h2>
+          Travel Made Simple,<br>
+          Adventures Made Amazing
+        </h2>
+        <p>
+          Whether it’s discovering hidden destinations or unforgettable
+          travel experiences, we make every journey stress-free and memorable.
+        </p>
+
+        <div class="row thumbs g-3 mt-4">
+          <div class="col-4">
+            <img src="images/o.jpg" alt="">
+          </div>
+          <div class="col-4">
+            <img src="images/l.jpg" alt="">
+          </div>
+          <div class="col-4">
+            <img src="images/r.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-6">
+        <div class="image-card">
+          <img src="images/s.jpg" alt="">
+          <div class="card-content">
+            <h5>Stress? Not on Our Watch!</h5>
+            <p>
+              We handle everything from planning to execution,
+              so you can relax and enjoy the adventure of a lifetime.
+            </p>
+            <a href="#" class="learn-more">Learn more →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PACKAGES ================= -->
+<section class="section-swati">
+  <div class="container">
+
+    <div class="row mb-5 align-items-center">
+      <div class="col-lg-6">
+        <span class="section-badge">Our Package</span>
+        <h2>Vacations You’ll Never<br>Stop Talking About</h2>
+      </div>
+      <div class="col-lg-6 text-lg-end">
+        <p class="section-desc ms-lg-auto">
+          Adventure, joy, and memories are waiting for you.
+          Choose from our carefully curated vacation experiences.
+        </p>
+        <button class="btn btn-dark btn-sm rounded-pill mt-3">
+          Booking Vacation →
+        </button>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="destination-card" style="background-image:url('images/o.jpg')">
+          <div class="destination-content">
+            <h5>Canadian Rockies Lake Escape</h5>
+            <p>Nature, lakes, and breathtaking views</p>
+            <button class="tag-btn">Adventure</button>
+            <button class="tag-btn">Nature</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="destination-card" style="background-image:url('images/p.jpg')">
+          <div class="destination-content">
+            <h5>Maldives Overwater Escape</h5>
+            <p>Luxury stays and crystal-clear waters</p>
+            <button class="tag-btn">Luxury</button>
+            <button class="tag-btn">Relax</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="destination-card" style="background-image:url('images/r.jpg')">
+          <div class="destination-content">
+            <h5>Parisian Romance Getaway</h5>
+            <p>Culture, love, and iconic landmarks</p>
+            <button class="tag-btn">Romance</button>
+            <button class="tag-btn">Culture</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section-shinu">
+  <div class="container">
+
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <span class="section-badge">Our FAQ</span>
+        <h2>Everything You Need to<br>Know, All in One Place</h2>
+      </div>
+      <div class="col-lg-6">
+        <p class="section-desc">
+          We know planning trips comes with many questions.
+          Here are answers to the most common ones.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="faq-card">
+          <h6>How do I book a trip?</h6>
+          <p>Choose your destination, select your package,
+             and follow the simple booking process.</p>
+          <a href="#" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faq-card">
+          <h6>What's included in the packages?</h6>
+          <p>Accommodation, guided tours, and selected
+             experiences are included.</p>
+          <a href="#" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faq-card">
+          <h6>Can I customize my travel package?</h6>
+          <p>Yes! You can personalize your trip based on
+             your preferences.</p>
+          <a href="#" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faq-card">
+          <h6>What's your cancellation policy?</h6>
+          <p>Flexible cancellation options are available
+             depending on the package.</p>
+          <a href="#" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faq-card">
+          <h6>Are flights included?</h6>
+          <p>Flights may be included depending on the
+             selected travel package.</p>
+          <a href="#" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="faq-card">
+          <h6>Do you offer group discounts?</h6>
+          <p>Yes, we offer exclusive discounts for
+             group bookings.</p>
+          <a href="#" class="learn-more">Learn More →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ================= CTA IMAGE ================= -->
+<section class="section-shinu">
+  <div class="cta-section">
+    <div class="cta-content">
+      <h2>Why Wait for Tomorrow?<br>Book Today!</h2>
+      <p>
+        Your dream vacation is waiting for you.
+        Take the first step and start your journey now.
+      </p>
+      <button class="btn btn-light">Let’s Go →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section-shinu">
+  <div class="container text-center mb-5">
+    <span class="section-badge">Our Testimonial</span>
+    <h2>What Our Travelers Love<br>About Us</h2>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="testimonial-card">
+          <img src="images/p.jpg">
+          <h6>Emily Carter</h6>
+          <small>Solo Traveler</small>
+          <p>The experience was seamless and unforgettable.
+             Every detail was perfectly arranged.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="testimonial-card">
+          <img src="images/k.jpg">
+          <h6>James Wilson</h6>
+          <small>Family Traveler</small>
+          <p>Our family trip was stress-free and fun.
+             Highly recommended for family vacations.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="testimonial-card">
+          <img src="images/j.jpg">
+          <h6>David Brown</h6>
+          <small>Backpacker</small>
+          <p>Perfect balance of adventure and comfort.
+             I’ll definitely travel with them again.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="testimonial-card">
+          <img src="images/o.jpg">
+          <h6>Isabela Torres</h6>
+          <small>Photographer</small>
+          <p>Beautiful destinations and excellent planning.
+             A dream experience for travelers.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER CTA ================= -->
+<section class="footer-cta">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-lg-4">
+        <h3>Ready to pack your bags?<br>We’ve got the best deals waiting for you</h3>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="col-lg-6 ms-auto">
+        <div class="row">
+          <div class="col-lg-4">
+            <h6>Explore</h6>
+            <ul>
+              <li>Top Destinations</li>
+              <li>Vacation Packages</li>
+              <li>Adventure Travel</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6>Support</h6>
+            <ul>
+              <li>FAQ</li>
+              <li>Contact Us</li>
+              <li>Booking Policy</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6>Special Offers</h6>
+            <ul>
+              <li>Last Minute Deals</li>
+              <li>Seasonal Discounts</li>
+              <li>Group Offers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <div class="footer-bottom d-flex justify-content-between">
+      <span>© 2026 All rights reserved</span>
+      <span>Privacy Policy · Terms & Conditions</span>
+    </div>
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
