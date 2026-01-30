@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | AeroLogix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  
+
+  <!-- Icons -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+  body {
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+     }
+
+/* NAVBAR */
+    .navbar {
+      
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-size: 14px;
+      margin-right: 18px;
+    }
+
+    .search-box {
+      background: rgba(255,255,255,0.15);
+      border: none;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .search-box::placeholder {
+      color: #ddd;
+    }
+
+    .social-icons i {
+      color: #fff;
+      margin-left: 14px;
+      cursor: pointer;
+    }
+
+
+/* Hero */
+.about-hero {
+  height: 420px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("images/bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-top: 0px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.about-hero p span {
+  color: #fbb034;
+}
+ /* ================= PACKAGES ================= */
+.packages-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.package-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.package-card img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+}
+
+.package-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.1));
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.package-overlay .days {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.package-overlay h4 {
+  font-size: 22px;
+  margin: 8px 0;
+}
+
+.package-overlay p {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.package-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.package-footer .price {
+  font-size: 13px;
+}
+
+.package-footer .btn {
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 6px 14px;
+}
+
+/* ================= FOOTER CTA ================= */
+    .footer-cta {
+      background: #0f0f0f;
+      color: #fff;
+      padding: 70px 0;
+    }
+
+    .footer-cta h3 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .footer-cta p {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    .footer-cta ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-cta ul li {
+      font-size: 13px;
+      color: #bbb;
+      margin-bottom: 6px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 40px;
+      padding-top: 0px;
+      font-size: 12px;
+      color: #888;
+    }
+    .h6{
+      text-align: right;
+    }
+
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+  <a class="navbar-brand fw-bold" href="index.html">Travel</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <!-- LEFT MENU -->
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="destination.html">Destination</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        
+      </ul>
+
+      <!-- SEARCH -->
+      <input type="text" class="search-box me-3" placeholder="Search Destination">
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons">
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ===== Hero Section ===== -->
+<section class="about-hero">
+  <div class="container">
+    <h1>Destination</h1>
+    <p>Home <span>»</span> About Us<span>»</span>Destination</p>
+  </div>
+</section>
+ 
+<!-- ================= PACKAGES SECTION ================= -->
+<section class="packages-section">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="package-card">
+          <img src="images/r.jpg" alt="">
+          <div class="package-overlay">
+            <span class="days">7 Days Trip</span>
+            <h4>Explore Bromo</h4>
+            <p>We offer more than just trips. We craft journeys that immerse you in the culture.</p>
+            <div class="package-footer">
+              <span class="price">From <strong>$450</strong>/pack</span>
+              <a href="#" class="btn btn-light btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="package-card">
+          <img src="images/s.jpg" alt="">
+          <div class="package-overlay">
+            <span class="days">3 Days Trip</span>
+            <h4>Wildlife Safari</h4>
+            <p>Experience wildlife and nature with our curated safari adventures.</p>
+            <div class="package-footer">
+              <span class="price">From <strong>$950</strong>/pack</span>
+              <a href="#" class="btn btn-light btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="package-card">
+          <img src="images/p.jpg" alt="">
+          <div class="package-overlay">
+            <span class="days">5 Days Trip</span>
+            <h4>Fuji Midnights</h4>
+            <p>Discover scenic roads, night skies, and unforgettable views.</p>
+            <div class="package-footer">
+              <span class="price">From <strong>$750</strong>/pack</span>
+              <a href="#" class="btn btn-light btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="package-card">
+          <img src="images/sip.png" alt="">
+          <div class="package-overlay">
+            <span class="days">7 Days Trip</span>
+            <h4>Enjoy Hawaii</h4>
+            <p>Relax on beaches and enjoy tropical paradise experiences.</p>
+            <div class="package-footer">
+              <span class="price">From <strong>$450</strong>/pack</span>
+              <a href="#" class="btn btn-light btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="package-card">
+          <img src="images/sips.png" alt="">
+          <div class="package-overlay">
+            <span class="days">3 Days Trip</span>
+            <h4>Bali Surfing</h4>
+            <p>Ride the waves and explore Bali’s vibrant surf culture.</p>
+            <div class="package-footer">
+              <span class="price">From <strong>$950</strong>/pack</span>
+              <a href="#" class="btn btn-light btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="package-card">
+          <img src="images/r.jpg" alt="">
+          <div class="package-overlay">
+            <span class="days">5 Days Trip</span>
+            <h4>Nusa Penida</h4>
+            <p>Explore dramatic cliffs, beaches, and crystal waters.</p>
+            <div class="package-footer">
+              <span class="price">From <strong>$750</strong>/pack</span>
+              <a href="#" class="btn btn-light btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= FOOTER CTA ================= -->
+<section class="footer-cta">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-lg-4">
+        <h3>Ready to pack your bags?<br>We’ve got the best deals waiting for you</h3>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="col-lg-6 ms-auto">
+        <div class="row">
+          <div class="col-lg-4">
+            <h6>Explore</h6>
+            <ul>
+              <li>Top Destinations</li>
+              <li>Vacation Packages</li>
+              <li>Adventure Travel</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6>Support</h6>
+            <ul>
+              <li>FAQ</li>
+              <li>Contact Us</li>
+              <li>Booking Policy</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6>Special Offers</h6>
+            <ul>
+              <li>Last Minute Deals</li>
+              <li>Seasonal Discounts</li>
+              <li>Group Offers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    <div class="footer-bottom d-flex justify-content-between">
+      <span>© 2026 All rights reserved</span>
+      <span>Privacy Policy · Terms & Conditions</span>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
