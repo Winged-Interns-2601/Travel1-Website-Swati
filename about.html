@@ -12,26 +12,56 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<style>
-    body {
-  font-family: 'Poppins', sans-serif;
-}
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-/* Navbar */
-.main-nav {
-  background: rgba(0, 0, 0, 0.7);
-}
+  <style>
+  body {
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+     }
+
+/* NAVBAR */
+    .navbar {
+      
+      backdrop-filter: blur(6px);
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-size: 14px;
+      margin-right: 18px;
+    }
+
+    .search-box {
+      background: rgba(255,255,255,0.15);
+      border: none;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .search-box::placeholder {
+      color: #ddd;
+    }
+
+    .social-icons i {
+      color: #fff;
+      margin-left: 14px;
+      cursor: pointer;
+    }
+
 
 /* Hero */
 .about-hero {
-  height: 320px;
+  height: 420px;
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
               url("images/picks.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   color: #fff;
-  margin-top: 56px;
+  margin-top: 0px;
 }
 
 .about-hero h1 {
@@ -66,6 +96,14 @@
   border-radius: 10px;
   border: 5px solid #fff;
 }
+.swati{
+  background:white;
+}
+.shinu{
+  background:white;
+
+}
+
 
 /* Experience Box */
 .experience-box {
@@ -219,32 +257,88 @@
   box-shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
 
+    /* ================= FOOTER CTA ================= */
+    .footer-cta {
+      background: #0f0f0f;
+      color: #fff;
+      padding: 70px 0;
+    }
+
+    .footer-cta h3 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .footer-cta p {
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    .footer-cta ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-cta ul li {
+      font-size: 13px;
+      color: #bbb;
+      margin-bottom: 6px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 40px;
+      padding-top: 0px;
+      font-size: 12px;
+      color: #888;
+    }
+    .h6{
+      text-align: right;
+    }
+
 </style>
 </head>
 
 <body>
 
-<!-- ===== Navbar ===== -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top main-nav">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">AeroLogix</a>
+    <a class="navbar-brand fw-bold" href="index.html">Travel</a>
 
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse" id="menu">
+      <!-- LEFT MENU -->
+      <ul class="navbar-nav me-auto">
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="about.html">About Us</a>
+          <a class="nav-link" href="#">Destination</a>
         </li>
-        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Package</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
       </ul>
+
+      <!-- SEARCH -->
+      <input type="text" class="search-box me-3" placeholder="Search Destination">
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons">
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter-x"></i>
+      </div>
     </div>
   </div>
 </nav>
@@ -259,7 +353,7 @@
 </section>
 
 <!-- ===== About Content ===== -->
-<section class="about-content py-5">
+<section  class="swati" class="about-content py-5" >
   <div class="container">
     <div class="row align-items-center g-5">
 
@@ -292,7 +386,7 @@
 </section>
 
 <!-- ===== Features ===== -->
-<section class="features py-5">
+<section class="shinu features py-5">
   <div class="container">
     <div class="row text-center g-4">
 
@@ -318,21 +412,8 @@
   </div>
 </section>
 
-<!-- ===== Navbar ===== -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">AeroLogix</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="menu">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+
 
 
 <!-- ===== Industry Section ===== -->
@@ -440,6 +521,59 @@
     </div>
   </div>
 </section>
+
+<!-- ================= FOOTER CTA ================= -->
+<section class="footer-cta">
+  <div class="container">
+    <div class="row g-4">
+      
+      <div class="col-lg-4">
+        <h3>Ready to pack your bags?<br>We’ve got the best deals waiting for you</h3>
+      </div>
+
+      <!-- RIGHT SIDE CONTENT -->
+      <div class="col-lg-6 ms-auto">
+        <div class="row">
+          <div class="col-lg-4">
+            <h6>Explore</h6>
+            <ul>
+              <li>Top Destinations</li>
+              <li>Vacation Packages</li>
+              <li>Adventure Travel</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6>Support</h6>
+            <ul>
+              <li>FAQ</li>
+              <li>Contact Us</li>
+              <li>Booking Policy</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h6>Special Offers</h6>
+            <ul>
+              <li>Last Minute Deals</li>
+              <li>Seasonal Discounts</li>
+              <li>Group Offers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    <div class="footer-bottom d-flex justify-content-between">
+      <span>© 2026 All rights reserved</span>
+      <span>Privacy Policy · Terms & Conditions</span>
+    </div>
+  </div>
+</section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
