@@ -472,3 +472,82 @@ body {
     .h6{
       text-align: right;
     }
+    /* ================= FLUID RESPONSIVE TEXT (NO DESIGN CHANGE) ================= */
+/* ================= RESPONSIVE FIX ONLY ================= */
+
+@media (max-width: 992px){
+
+  .hero{
+    height: auto;
+    padding: 120px 0 80px;
+  }
+
+  .right-icons{
+    display: none;
+  }
+
+  .explore-btn{
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .cta-section{
+    margin: 20px;
+    padding: 80px 20px;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .hero-content{
+    text-align: center;
+  }
+
+  .subscribe-wrapper{
+    width: 100%;
+  }
+
+  .left-content{
+    text-align: center;
+  }
+
+  .image-card img{
+    height: auto;
+  }
+
+  .destination-card{
+    height: 240px;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 576px){
+
+  .hero{
+    padding-top: 100px;
+  }
+
+  .hero-content h1{
+    font-size: 36px;
+  }
+
+  .left-content h2{
+    font-size: 28px;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+
+  .cta-content h2{
+    font-size: 30px;
+  }
+
+}
